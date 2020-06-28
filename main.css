@@ -117,10 +117,10 @@ h1 {
     line-height: 65px;
 }
 
-/*increases subheader font size*/
+/*adjusts subheader font size*/
 .subheader {
     line-height: 10px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /*styles descriptor under header*/
@@ -214,10 +214,6 @@ section {
 /**/
 @media screen and (min-width: 620px) {
     
-    /* reveals nav bar */
-    .links {
-        visibility: visible;
-    }
     /* adjusts bio section*/
     /*
     /*
@@ -249,6 +245,10 @@ section {
 }
 
 @media screen and (min-width: 870px) {
+    /* reveals nav bar */
+    .links {
+        visibility: visible;
+    }
     .subheader {
         font-size: 32px;
         line-height: 10px;

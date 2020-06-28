@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F0EDFD;
+    color: #140841;
+}
+
+div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*FONTS*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* styling the nav bar*/
+/*
+/*
+/* removes bullet points on list items*/
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+/*styles the nav bar*/
+.links {
+    position: fixed;
+    top: 0;
+    background-color: #220D6D;
+    color: #74D3AE;
+    margin: 0;
+    width: 100%;
+    visibility: hidden;
+}
+/*styles nav buttons*/
+.nav-buttons {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 14px;
+    padding: 16px 48px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: #D3C9F8;
+    background-color: #220D6D;
+    font-size: 16px;
+}
+
+.nav-buttons:hover {
+    background-color: #D3C9F8;
+    color: #220D6D;
+}
+
+.home-button {
+    margin-left: 0;
+    float: left;
+    background-color: #D3C9F8;
+    color: #140841;
+}
+
+.home-button:hover {
+    background-color: #74D3AE;
+    color: #F0EDFD;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    float: right;
+}
+
+/*styles anchors*/
+a .nav-buttons, a:link .nav-buttons, a:visited .nav-buttons{
+    text-decoration: none;
+    color: #1A090D;
+    cursor: pointer;
+}
+
+
+
+/*styles the header*/
+/*
+/*
+/*header sizing and general style*/
+header {
+    color: #140841;
+    padding: 135px 35px;
+    margin: 0px;
+}
+
+/*increases header font size*/
+h1 {
+    font-size: 72px;
+    text-align: center;
+    line-height: 65px;
+}
+
+/*increases subheader font size*/
+.subheader {
+    line-height: 10px;
+    font-size: 20px;
+}
+
+/*styles descriptor under header*/
+.home-descriptor {
+    background-color: #D3C9F8;
+    margin: 0px;
+    padding: 40px;
+}
+
+/*styles home descriptor text*/
+.home-descriptor p {
+    padding: 0;
+    font-size: 115%;
+}
+
+
+
+/*styles general content containers*/
+/*
+/*
+/*
+/*targets the section element*/
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F0EDFD;
+}
+
+
+/*styles the project section*/
+/*
+/*
+/*
+/*styles project images*/
+.project-image {
+    width: 95%;
+    max-height: 400px;
+    max-width: 800px;
+}
+
+
+
+/*styles the bio section*/
+/*
+/*
+/*
+/*changes color of the bio section*/
+.teal {
+    background-color: #74D3AE;
+}
+/*mobile-first bio image sizing*/
+.bio-image {
+    width: 100%;
+}
+/*flex display, mobile-first*/
+.bio-flex {  
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*styles contact section*/
+/*
+/*
+/*styles contact page images*/
+.contact-image {
+    width: 40px;
+}
+
+/*styles contact page buttons*/
+.contact-button {
+    border: none;
+    background: none;
+}
+
+
+
+/*styles footer*/
+.css-footer {
+    text-align: center;
+    color: #D3C9F8;
+    padding: 5px;
+}
+
+/*/*//* media query adjustments*//*/
+/*
+/**/
+@media screen and (min-width: 620px) {
+    
+    /* reveals nav bar */
+    .links {
+        visibility: visible;
+    }
+    /* adjusts bio section*/
+    /*
+    /*
+    /*flex display, tablets and larger*/
+    .bio-flex {  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+    }
+    /*tablets and larger, bio image sizing*/
+    .bio-image {
+        width: 40%;
+        padding: 10px;
+    }
+    .bio-space-limit {
+        max-width: 50px;
+    }
+    /*tablets and larger, contact info section size*/
+    .contact-section {
+        margin-bottom: 200px;
+    }
+    .subheader {
+        font-size: 27px;
+        line-height: 10px;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .subheader {
+        font-size: 32px;
+        line-height: 10px;
+    }
+}

@@ -120,7 +120,7 @@ h1 {
 /*increases subheader font size*/
 .subheader {
     line-height: 10px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /*styles descriptor under header*/
@@ -133,7 +133,7 @@ h1 {
 /*styles home descriptor text*/
 .home-descriptor p {
     padding: 0;
-    font-size: 115%;
+    font-size: 90%;
 }
 
 
@@ -179,6 +179,10 @@ section {
 .bio-flex {  
     display: flex;
     flex-direction: column;
+}
+/*styles bio font size*/
+.bio-font {
+    font-size: 14px;
 }
 
 
@@ -230,9 +234,7 @@ section {
         width: 40%;
         padding: 10px;
     }
-    .bio-space-limit {
-        max-width: 50px;
-    }
+ 
     /*tablets and larger, contact info section size*/
     .contact-section {
         margin-bottom: 200px;
@@ -241,11 +243,20 @@ section {
         font-size: 27px;
         line-height: 10px;
     }
+    .home-descriptor p {
+        font-size: 100%;
+    }
 }
 
 @media screen and (min-width: 870px) {
     .subheader {
         font-size: 32px;
         line-height: 10px;
+    }
+    .home-descriptor p {
+        font-size: 110%;
+    }
+    .bio-font {
+        font-size: 18px;
     }
 }
